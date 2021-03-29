@@ -122,12 +122,18 @@ public class YourTest {
     @Test
     public void your_test_unit() {
 
+        // returns Optional<MockedConsumer>
         var mocked = mocked.of("my-group.id");
+
         mocked.ifPresent(m -> {
-
+            // reseting the consumer by adding new record
             m.reset("my-topic", null, "some-value");
-
         });
+
+        /* Tip: perform some sleep and the listener will have time to consume
+         * and process
+         */
+        Thread.sleep(Duration.ofSeconds(3).toMillis());
 
         //TODO your assertion about the result of consumed record above
 
