@@ -10,17 +10,17 @@ import org.springframework.kafka.core.ProducerFactory;
 /**
  * @author fabiojose
  */
-public class KafkaMockedConfig {
+public class MockedKafkaConfig {
 
     @Bean
     @Primary
     public ConsumerFactory<?, ?> mockedConsumerFactory() {
-        return new KafkaMockedConsumerFactory<>(Map.of());
+        return new MockedKafkaConsumerFactory<>(Map.of());
     }
 
     @Bean
     @Primary
     public ProducerFactory<?, ?> mockedProducerFactory() {
-        return new KafkaMockedProducerFactory<>(Map.of());
+        return new MockedKafkaProducerFactory<>(Map.of());
     }
 }

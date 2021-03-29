@@ -14,13 +14,13 @@ import lombok.extern.slf4j.Slf4j;
  * @author fabiojose
  */
 @Slf4j
-public class KafkaMockedProducerFactory<K, V>
+public class MockedKafkaProducerFactory<K, V>
 extends
     DefaultKafkaProducerFactory<K, V> {
 
     private MockProducer<K, V> producer;
 
-    public KafkaMockedProducerFactory(Map<String, Object> configs) {
+    public MockedKafkaProducerFactory(Map<String, Object> configs) {
         super(configs);
     }
 

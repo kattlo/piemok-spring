@@ -15,13 +15,13 @@ import lombok.extern.slf4j.Slf4j;
  * @author fabiojose
  */
 @Slf4j
-public class KafkaMockedConsumerFactory<K, V>
+public class MockedKafkaConsumerFactory<K, V>
 extends
     DefaultKafkaConsumerFactory<K,V> {
 
     private Map<String, MockedConsumer<K, V>> consumers = new HashMap<>();
 
-    public KafkaMockedConsumerFactory(Map<String, Object> configs) {
+    public MockedKafkaConsumerFactory(Map<String, Object> configs) {
         super(configs);
     }
 

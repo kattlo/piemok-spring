@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Import;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 
-@Import(KafkaMockedConfig.class)
+@Import(MockedKafkaConfig.class)
 @SpringBootTest(
     classes = {
         App.class
     }
 )
-public class KafkaMockedConfigTest {
+public class MockedKafkaConfigTest {
 
     @Autowired
     DefaultKafkaConsumerFactory<String, Object> consumerFactory;
@@ -26,14 +26,14 @@ public class KafkaMockedConfigTest {
     @Test
     public void should_load_mocked_consumer_as_default_factory() {
 
-        assertTrue(consumerFactory instanceof KafkaMockedConsumerFactory);
+        assertTrue(consumerFactory instanceof MockedKafkaConsumerFactory);
     }
 
 
     @Test
     public void should_load_mocked_producer_as_default_factory() {
 
-        assertTrue(producerFactory instanceof KafkaMockedProducerFactory);
+        assertTrue(producerFactory instanceof MockedKafkaProducerFactory);
     }
 
 }
