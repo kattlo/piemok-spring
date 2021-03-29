@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven'
+}
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url = uri('http://packages.confluent.io/maven/')
+    }
+
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+
+    implementation 'com.github.kattlo:piemok:v0.12.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter:2.4.3'
+    implementation 'org.springframework.kafka:spring-kafka:2.6.6'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.4.3'
+
+    compileOnly 'org.projectlombok:lombok:1.18.18'
+	annotationProcessor 'org.projectlombok:lombok:1.18.16'
+
+}
+
+group = 'io.github.kattlo'
+version = '0.10.0'
+description = 'Piemok for Spring'
+
+java.sourceCompatibility = JavaVersion.VERSION_11
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+	useJUnitPlatform()
+}

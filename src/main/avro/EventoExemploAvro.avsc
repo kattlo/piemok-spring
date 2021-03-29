@@ -1,0 +1,21 @@
+{
+    "namespace":"__s_namespace_",
+    "name":"EventoExemploAvro",
+    "type":"record",
+    "version":"1.0.0",
+    "doc":"Documentação sobre o Evento",
+    "fields":[
+        {
+            "name":"codigo",
+            "type":"long"
+        },
+        {
+            "name":"nome",
+            "type":"string"
+        },
+        {
+            "name":"descricao",
+            "type":"string"
+        }
+    ]
+}
