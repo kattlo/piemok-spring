@@ -30,7 +30,7 @@ __Support:__
     }
 
     dependencies {
-	    testImplementation 'com.github.kattlo:piemok-spring:v0.10.0'
+	    testImplementation 'com.github.kattlo:piemok-spring:v0.12.0'
 	}
 
     ```
