@@ -10,7 +10,7 @@ __Support:__
 - Java 11+
 - Apache Kafka® 2.6.0+
 - Spring Kafka 2.6.6
-- Consumer by Subscription
+- Consuming by Subscription
 
 ## Getting Started
 
