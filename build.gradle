@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
 
-    api 'com.github.kattlo:piemok:v0.12.0'
+    api 'com.github.kattlo:piemok:v0.13.0'
 
     implementation 'org.springframework.boot:spring-boot-starter:2.4.3'
     implementation 'org.springframework.kafka:spring-kafka:2.6.6'
@@ -32,7 +32,7 @@ dependencies {
 }
 
 group = 'io.github.kattlo'
-version = '0.11.0'
+version = '0.12.0'
 description = 'Piemok for Spring'
 
 java.sourceCompatibility = JavaVersion.VERSION_11
