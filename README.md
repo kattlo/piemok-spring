@@ -2,7 +2,6 @@
 
 Convenience lib to use Piemok within Spring projects.
 
-- 💡 [See examples](./examples)
 - [See Piemok](https://github.com/kattlo/piemok)
 
 __Support:__
