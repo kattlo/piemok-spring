@@ -18,7 +18,7 @@ dependencies {
 
     api 'com.github.kattlo:piemok:v0.13.0'
 
-    implementation 'org.springframework.boot:spring-boot-starter:2.4.3'
+    implementation 'org.springframework.boot:spring-boot-starter:2.7.0'
     implementation 'org.springframework.kafka:spring-kafka:2.6.6'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
